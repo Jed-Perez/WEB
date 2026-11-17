@@ -1,0 +1,8 @@
+/config/local.php
+/storage/*
+!/storage/.htaccess
+!/storage/.gitkeep
+/dist/
+/tests/runtime/
+/tools/__pycache__/
+/iot/config.h

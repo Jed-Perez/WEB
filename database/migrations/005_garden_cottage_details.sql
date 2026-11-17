@@ -1,0 +1,20 @@
+UPDATE facilities
+SET description=CONCAT_WS(CHAR(10),
+    'Room Inclusions:',
+    'Kubo Rooms (Fan/AC): Day Tour & Overnight Available',
+    'With WiFi',
+    'Free use of Griller',
+    'Common CR',
+    'Free Tent Pitch (Pwede mag dala ng sariling Tent)',
+    'Free Use of Swimming Pool',
+    'Bed Capacity good for 5 persons',
+    'Extra mattress Available',
+    'Additional ₱250 if magluluto',
+    'Overnight Time: 10 AM Check-in | 9 AM Check-Out',
+    'Details:',
+    'Beach Front + Swimming Pool Access',
+    'No Entrance Fee',
+    'No Corkage Fee',
+    'Highlight:',
+    'Perfect for Family, Barkada & Team Outing!')
+WHERE name='Demo · Garden Cottage 01' AND type='cottage';

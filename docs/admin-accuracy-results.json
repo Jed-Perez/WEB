@@ -1,0 +1,250 @@
+{
+  "timestamp": "2026-11-16T17:28:02.096253",
+  "results": [
+    {
+      "name": "Accuracy login admin",
+      "passed": true,
+      "detail": "HTTP 200; Signed in."
+    },
+    {
+      "name": "Accuracy login guest",
+      "passed": true,
+      "detail": "HTTP 200; Signed in."
+    },
+    {
+      "name": "Accuracy login guest2",
+      "passed": true,
+      "detail": "HTTP 200; Signed in."
+    },
+    {
+      "name": "Create accuracy test room",
+      "passed": true,
+      "detail": "HTTP 201; Record created."
+    },
+    {
+      "name": "Create pending test booking",
+      "passed": true,
+      "detail": "HTTP 201; Record created."
+    },
+    {
+      "name": "Normal availability respects held room",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "Held room absent from new-booking availability",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Owned pending booking availability",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "Editing includes own held room",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Other guest cannot exclude someone else booking",
+      "passed": true,
+      "detail": "HTTP 404; Reservation not found."
+    },
+    {
+      "name": "Admin can check pending booking",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "Full filtered payment summary",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "Preview limited to 100, total includes all 105",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Full total excludes voided payment",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Full print dataset",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "Print includes all matching rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Invalid calendar date rejected",
+      "passed": true,
+      "detail": "HTTP 422; Choose valid filter dates."
+    },
+    {
+      "name": "Reversed export dates rejected",
+      "passed": true,
+      "detail": "HTTP 422; The end date must not precede the start date."
+    },
+    {
+      "name": "Guest cannot access report endpoint",
+      "passed": true,
+      "detail": "HTTP 403; You do not have permission for this action."
+    },
+    {
+      "name": "Dashboard exposes unread total",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "Unread count independent of six-item preview",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Arrival queue includes today pending booking",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Maintenance occupancy breakdown present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Mark one notification read",
+      "passed": true,
+      "detail": "HTTP 200; Notifications marked as read."
+    },
+    {
+      "name": "Exactly one notification marked read",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Cannot mark another user notification",
+      "passed": true,
+      "detail": "HTTP 200; Notifications marked as read."
+    },
+    {
+      "name": "Notification ownership protected",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Create same-name sensor",
+      "passed": true,
+      "detail": "HTTP 201; Record created."
+    },
+    {
+      "name": "Create same-name sensor",
+      "passed": true,
+      "detail": "HTTP 201; Record created."
+    },
+    {
+      "name": "Range-based sensor trend",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "Same-name sensors retain distinct identities",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Trend includes every sample beyond table page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Trend rejects oversized date range",
+      "passed": true,
+      "detail": "HTTP 422; Choose up to 31 days for the temperature trend."
+    },
+    {
+      "name": "Guest denied sensor trend",
+      "passed": true,
+      "detail": "HTTP 403; You do not have permission for this action."
+    },
+    {
+      "name": "Dashboard exact unread badge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Summary card applies status filter",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Admin can confirm pending reservation from its row",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Payment form shows current balance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Payment amount constrained to balance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard check-in action updates reservation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Refresh failure warns about stale data",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Refresh recovers after connection failure",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chart renders two same-name devices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Trend remains complete across page size changes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Changed filters disable exports",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Report UI shows full total",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Print renders all rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Operations dashboard fits mobile",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Admin regression has no browser exceptions",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

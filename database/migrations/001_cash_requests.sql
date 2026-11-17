@@ -1,0 +1,28 @@
+-- Additive upgrade for installed databases. Existing bookings and payments are retained.
+CREATE TABLE IF NOT EXISTS cash_requests (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    reference VARCHAR(30) NOT NULL UNIQUE,
+    reservation_id INT NOT NULL,
+    guest_id INT NOT NULL,
+    guest_name VARCHAR(100) NOT NULL,
+    facility_name VARCHAR(100) NOT NULL,
+    arrival DATE NOT NULL,
+    departure DATE NOT NULL,
+    total_at_issue DECIMAL(12,2) NOT NULL,
+    amount DECIMAL(12,2) NOT NULL,
+    notes VARCHAR(500) NOT NULL DEFAULT '',
+    state ENUM('pending','paid','cancelled') NOT NULL DEFAULT 'pending',
+    payment_id INT NULL UNIQUE,
+    created_by INT NOT NULL,
+    cancelled_reason VARCHAR(500) NULL,
+    cancelled_at DATETIME NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY(reservation_id) REFERENCES reservations(id),
+    FOREIGN KEY(guest_id) REFERENCES guests(id),
+    FOREIGN KEY(payment_id) REFERENCES payments(id),
+    FOREIGN KEY(created_by) REFERENCES users(id),
+    INDEX(reservation_id,state),
+    INDEX(guest_id,created_at),
+    CHECK(amount>0)
+) ENGINE=InnoDB;

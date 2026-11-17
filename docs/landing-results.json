@@ -1,0 +1,155 @@
+{
+  "timestamp": "2026-11-16T14:14:06.630749",
+  "results": [
+    {
+      "name": "Anonymous root serves the landing page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Public catalog is database backed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Public catalog exposes only accommodation fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Non-bookable facilities excluded from catalog",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Public endpoint rejects mutations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Public availability validates dates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Public availability returns valid units",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Database installer refuses existing tables",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Installer refusal preserves data",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CLI installer supports a fresh configured database",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Administrator invitation creates a one-use code",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Invited administrator has an active role and hashed password",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Landing inventory cards render",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "AJAX search displays selected dates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Booking link opens guest registration",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Sign-in restores reservation dates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Sign-in restores selected facility and guest count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Landing handoff creates a real reservation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Signed-in guests can manage stays on landing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile landing has no horizontal overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile public navigation works",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "FAQ accordion works",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Signed-in account can open reset-link form",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Reset link prefills the one-use token",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Reset token fragment removed from address bar",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Reset-link password change succeeds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Live XAMPP landing serves successfully",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Live installation shows three seeded bookable spaces",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Live landing has no mobile overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Landing and handoff have no JavaScript exceptions",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

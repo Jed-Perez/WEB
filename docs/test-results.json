@@ -1,0 +1,536 @@
+{
+  "timestamp": "2026-11-16T16:41:22.844460",
+  "environment": "PHP 8.2.12 / MariaDB 10.4.32 / Apache XAMPP / isolated ports 3307 and 8088",
+  "results": [
+    {
+      "name": "Schema import and hashed test account setup",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SQL sample inventory preserves UTF-8",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SQL sample rooms persist their image paths",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "New room photos target the requested facilities",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Anonymous API denied",
+      "passed": true,
+      "detail": "HTTP 401; Your session has expired. Please sign in."
+    },
+    {
+      "name": "Apache protects config/config.php",
+      "passed": true,
+      "detail": "403"
+    },
+    {
+      "name": "Apache protects app/Auth.php",
+      "passed": true,
+      "detail": "403"
+    },
+    {
+      "name": "Apache protects database/database.sql",
+      "passed": true,
+      "detail": "403"
+    },
+    {
+      "name": "Apache protects storage/php-errors.log",
+      "passed": true,
+      "detail": "403"
+    },
+    {
+      "name": "Apache protects tests/seed.php",
+      "passed": true,
+      "detail": "403"
+    },
+    {
+      "name": "Apache protects tools/setup.php",
+      "passed": true,
+      "detail": "403"
+    },
+    {
+      "name": "Apache protects docs/REQUIREMENTS.md",
+      "passed": true,
+      "detail": "403"
+    },
+    {
+      "name": "Apache protects views/layouts/head.php",
+      "passed": true,
+      "detail": "403"
+    },
+    {
+      "name": "Login admin",
+      "passed": true,
+      "detail": "HTTP 200; Signed in."
+    },
+    {
+      "name": "Login reception",
+      "passed": true,
+      "detail": "HTTP 200; Signed in."
+    },
+    {
+      "name": "Login staff",
+      "passed": true,
+      "detail": "HTTP 200; Signed in."
+    },
+    {
+      "name": "Login guest",
+      "passed": true,
+      "detail": "HTTP 200; Signed in."
+    },
+    {
+      "name": "Login guest2",
+      "passed": true,
+      "detail": "HTTP 200; Signed in."
+    },
+    {
+      "name": "Anonymous session can log in",
+      "passed": true,
+      "detail": "HTTP 200; Signed in."
+    },
+    {
+      "name": "Session ID regenerated on login",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Mutation without CSRF rejected",
+      "passed": true,
+      "detail": "403"
+    },
+    {
+      "name": "Staff cannot read guests",
+      "passed": true,
+      "detail": "HTTP 403; You do not have permission for this action."
+    },
+    {
+      "name": "Reception cannot administer users",
+      "passed": true,
+      "detail": "HTTP 403; You do not have permission for this action."
+    },
+    {
+      "name": "Guest cannot read audit history",
+      "passed": true,
+      "detail": "HTTP 403; You do not have permission for this action."
+    },
+    {
+      "name": "Guest cannot create facilities",
+      "passed": true,
+      "detail": "HTTP 403; You do not have permission for this action."
+    },
+    {
+      "name": "Invalid guest form rejected",
+      "passed": true,
+      "detail": "HTTP 422; Please check the form."
+    },
+    {
+      "name": "Invalid JSON rejected",
+      "passed": true,
+      "detail": "HTTP 400; Invalid JSON body."
+    },
+    {
+      "name": "Create guest with safely stored special characters",
+      "passed": true,
+      "detail": "HTTP 201; Record created."
+    },
+    {
+      "name": "Search guest by literal text",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "SQL injection input treated as data",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "Injection returns no unrelated records",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Edit guest",
+      "passed": true,
+      "detail": "HTTP 200; Record updated."
+    },
+    {
+      "name": "Create Unicode guest",
+      "passed": true,
+      "detail": "HTTP 201; Record created."
+    },
+    {
+      "name": "UTF-8 guest text round-trips through PDO and JSON",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Create facility",
+      "passed": true,
+      "detail": "HTTP 201; Record created."
+    },
+    {
+      "name": "Facility image path persists",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "Saved image path matches facility record",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Invalid facility image path rejected",
+      "passed": true,
+      "detail": "HTTP 422; Choose an existing image from assets/img."
+    },
+    {
+      "name": "Availability lookup",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "New facility is available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Availability returns facility image path",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Guest creates own reservation",
+      "passed": true,
+      "detail": "HTTP 201; Record created."
+    },
+    {
+      "name": "Other guest cannot view reservation",
+      "passed": true,
+      "detail": "HTTP 404; Record not found."
+    },
+    {
+      "name": "Overlapping reservation blocked",
+      "passed": true,
+      "detail": "HTTP 409; The selected unit is already reserved for these dates."
+    },
+    {
+      "name": "Capacity violation blocked",
+      "passed": true,
+      "detail": "HTTP 422; This unit is unavailable or exceeds its capacity."
+    },
+    {
+      "name": "Departure before arrival blocked",
+      "passed": true,
+      "detail": "HTTP 422; Choose a future stay between 1 and 365 nights."
+    },
+    {
+      "name": "Guest cannot confirm booking",
+      "passed": true,
+      "detail": "HTTP 403; Guests can only cancel a reservation."
+    },
+    {
+      "name": "Pending reservation edited",
+      "passed": true,
+      "detail": "HTTP 200; Record updated."
+    },
+    {
+      "name": "Archive facility with active booking blocked",
+      "passed": true,
+      "detail": "HTTP 422; Resolve active reservations before archiving."
+    },
+    {
+      "name": "Maintenance availability conflicting with bookings blocked",
+      "passed": true,
+      "detail": "HTTP 422; Resolve active reservations before changing type, blocking availability or reducing capacity."
+    },
+    {
+      "name": "Confirm reservation",
+      "passed": true,
+      "detail": "HTTP 200; Reservation status updated."
+    },
+    {
+      "name": "Edit confirmed reservation rejected",
+      "passed": true,
+      "detail": "HTTP 422; Only pending reservations can be edited."
+    },
+    {
+      "name": "Check in during reserved stay",
+      "passed": true,
+      "detail": "HTTP 200; Reservation status updated."
+    },
+    {
+      "name": "Check out with balance rejected",
+      "passed": true,
+      "detail": "HTTP 422; Settle the outstanding balance before check-out."
+    },
+    {
+      "name": "Record partial payment",
+      "passed": true,
+      "detail": "HTTP 201; Record created."
+    },
+    {
+      "name": "Read computed balance",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "Balance and partial status accurate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Overpayment rejected",
+      "passed": true,
+      "detail": "HTTP 422; Payment exceeds the outstanding balance."
+    },
+    {
+      "name": "Negative payment rejected",
+      "passed": true,
+      "detail": "HTTP 422; Use a non-negative amount with at most two decimal places."
+    },
+    {
+      "name": "Reception cannot void payment",
+      "passed": true,
+      "detail": "HTTP 403; You do not have permission for this action."
+    },
+    {
+      "name": "Admin void requires reason",
+      "passed": true,
+      "detail": "HTTP 422; Please check the form."
+    },
+    {
+      "name": "Admin void keeps ledger",
+      "passed": true,
+      "detail": "HTTP 200; Payment voided."
+    },
+    {
+      "name": "Voided payment excluded from balance",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "Balance restored after void",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Full settlement",
+      "passed": true,
+      "detail": "HTTP 201; Record created."
+    },
+    {
+      "name": "Check out after settlement",
+      "passed": true,
+      "detail": "HTTP 200; Reservation status updated."
+    },
+    {
+      "name": "Guest booking history",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "History links guest reservation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Guest sees only own payments",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "Other guest ledger empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Archive completed-use facility",
+      "passed": true,
+      "detail": "HTTP 200; Record archived."
+    },
+    {
+      "name": "Archived facility view",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "Archived record retained",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Restore facility",
+      "passed": true,
+      "detail": "HTTP 200; Record restored."
+    },
+    {
+      "name": "Archive guest without active bookings",
+      "passed": true,
+      "detail": "HTTP 200; Record archived."
+    },
+    {
+      "name": "Restore guest",
+      "passed": true,
+      "detail": "HTTP 200; Record restored."
+    },
+    {
+      "name": "Staff creates maintenance",
+      "passed": true,
+      "detail": "HTTP 201; Record created."
+    },
+    {
+      "name": "Maintenance completion requires resolution",
+      "passed": true,
+      "detail": "HTTP 422; Record the resolution before completing work."
+    },
+    {
+      "name": "Staff updates maintenance progress",
+      "passed": true,
+      "detail": "HTTP 200; Record updated."
+    },
+    {
+      "name": "Staff completes maintenance",
+      "passed": true,
+      "detail": "HTTP 200; Record updated."
+    },
+    {
+      "name": "Create device with one-time key",
+      "passed": true,
+      "detail": "HTTP 201; Record created."
+    },
+    {
+      "name": "Invalid sensor key denied",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Authenticated temperature ingestion",
+      "passed": true,
+      "detail": "{\"success\":true,\"message\":\"Temperature received.\",\"data\":{\"id\":1,\"duplicate\":false}}"
+    },
+    {
+      "name": "Sensor retry deduplicated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Conflicting sample retry rejected",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Sensor rate limit enforced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Sensor range validated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Staff sees recorded temperature",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "One physical sample stored",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Device listing contains no credential",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "Device key never returned in listings",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Delayed sensor marked stale",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Rotate device credential",
+      "passed": true,
+      "detail": "HTTP 200; Copy this key now. The previous key is revoked."
+    },
+    {
+      "name": "Rotated old key revoked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Export csv",
+      "passed": true,
+      "detail": "HTTP 200: b'\\xef\\xbb\\xbfreference,guest,facility,arrival,departure,status,total,paid,balance\\nR360-E4433CCB95,\"Test Guest\"'"
+    },
+    {
+      "name": "Export xls",
+      "passed": true,
+      "detail": "HTTP 200: b'<?xml version=\"1.0\" encoding=\"UTF-8\"?><Workbook xmlns=\"urn:schemas-microsoft-com:office:spreadsheet\"'"
+    },
+    {
+      "name": "Export pdf",
+      "passed": true,
+      "detail": "HTTP 200: b'%PDF-1.3\\n3 0 obj\\n<</Type /Page\\n/Parent 1 0 R\\n/Resources 2 0 R\\n/Contents 4 0 R>>\\nendobj\\n4 0 obj\\n<</Fi'"
+    },
+    {
+      "name": "Guest export denied",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Pagination works",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "Pagination contains one row and correct page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard from database",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "Dashboard count matches SQL",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "User cannot remove last admin",
+      "passed": true,
+      "detail": "HTTP 422; Keep at least one active administrator."
+    },
+    {
+      "name": "Create staff account through administration",
+      "passed": true,
+      "detail": "HTTP 201; Record created."
+    },
+    {
+      "name": "Create session for idle-expiry test",
+      "passed": true,
+      "detail": "HTTP 200; Signed in."
+    },
+    {
+      "name": "Idle session expiry enforced",
+      "passed": false,
+      "detail": "HTTP 200; OK"
+    }
+  ]
+}

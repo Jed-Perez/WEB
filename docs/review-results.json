@@ -1,0 +1,110 @@
+{
+  "timestamp": "2026-11-14T09:50:19.328678",
+  "results": [
+    {
+      "name": "Initial administrator CLI creates account",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Setup stores a hash instead of plaintext",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Initial administrator CLI refuses a second bootstrap",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CLI recovery issues one-use token",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Review administrator login",
+      "passed": true,
+      "detail": "HTTP 200; Signed in."
+    },
+    {
+      "name": "Void incorrect receipt after check-out",
+      "passed": true,
+      "detail": "HTTP 200; Payment voided."
+    },
+    {
+      "name": "Payment selector exposes outstanding checked-out stay",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "Checked-out correction can be selected",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Corrective payment after check-out",
+      "passed": true,
+      "detail": "HTTP 201; Record created."
+    },
+    {
+      "name": "Read corrected completed stay",
+      "passed": true,
+      "detail": "HTTP 200; OK"
+    },
+    {
+      "name": "Corrective ledger preserves stay and zero balance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile chart canvases contain rendered pixels",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile dashboard has no overflow",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bootstrap form renders for reservations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bootstrap form renders for guests",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bootstrap form renders for facilities",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bootstrap form renders for payments",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bootstrap form renders for maintenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bootstrap form renders for devices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bootstrap form renders for users",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Review has no JavaScript exceptions",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

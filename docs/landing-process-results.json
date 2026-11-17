@@ -1,0 +1,125 @@
+{
+  "timestamp": "2026-11-16T14:18:00.545827",
+  "results": [
+    {
+      "name": "Process administrator login",
+      "passed": true,
+      "detail": "HTTP 200; Signed in."
+    },
+    {
+      "name": "Create process test room",
+      "passed": true,
+      "detail": "HTTP 201; Record created."
+    },
+    {
+      "name": "Create process guest",
+      "passed": true,
+      "detail": "HTTP 201; Account created. You can sign in now."
+    },
+    {
+      "name": "Catalog shows full two-night total",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Changing group size invalidates selectable results",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Older availability cannot restore outdated selection",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Existing guest returns to landing review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Guest notes survive authentication",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Review shows restored dates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile booking review fits viewport",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Changed rate requires new review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Fresh review uses updated full price",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "One submission creates exactly one request",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Success clearly identifies pending state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Successful request clears draft",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Record partial payment for guest view",
+      "passed": true,
+      "detail": "HTTP 201; Record created."
+    },
+    {
+      "name": "Landing displays real payment ledger",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Cancellation explains paid settlement",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Guest cancellation persists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Cancellation retains payment history",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Expired draft recovers to usable catalog",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Landing draft does not interrupt workspace navigation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Workspace sign-out clears guest booking draft",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Landing process has no browser exceptions",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}
